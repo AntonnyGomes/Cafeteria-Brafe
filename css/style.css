@@ -1,3 +1,4 @@
+
 /* Reset */
 body, h1, h2, h3, p, ul{
     padding: 0px;
@@ -10,6 +11,8 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #252525;
 }
+
+
 
 /* menu */
 .menu{
@@ -42,8 +45,27 @@ body{
     color: #fff;
     font-size: 1.125em;
 }
+
+@media only screen and (max-width:739px){
+    .menu{
+        text-align: center;
+    }
+    a.menu-logo{
+        float: none;
+        margin: 0 auto;
+    }
+    .menu-nav{
+        float: none;
+        clear: both;
+    }
+
+}
+
+
+/* intro */
+
 .intro{
-    background: url(../img/cafe.jpg) no-repeat, center;
+    background: url(../img/cafe-interna.webp) no-repeat, center;
     background-size: cover;
     padding: 150px 0;
     text-align: center;
@@ -65,6 +87,17 @@ body{
     font-style: italic;
     font-size: 1.125em;
 }
+
+@media only screen and (max-width:739px){
+    .intro{
+        padding: 60px 0;
+    }
+}
+
+
+
+
+
 .sobre{
     padding: 60px 0;
 }
@@ -114,6 +147,31 @@ body{
     margin: 20px auto;
     max-width: 460px;
 }
+
+
+@media only screen and (min-width:740px) and (max-width: 980px){
+    .sobre-container{
+        max-width: 720px;
+
+    }
+    .sobre-item{
+        width: 340px;
+    }
+}
+
+
+@media only screen and (max-width: 739px){
+    .sobre-container{
+        max-width: 300px;
+
+    }
+    .sobre-item{
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+
 .produtos{
     background: #e7e4d8;
     padding: 60px 0;
@@ -180,6 +238,31 @@ h2.produtos-mineiro::before{
     margin: 20px auto 0 auto;
 }
 
+
+@media only screen and (min-width:740px) and (max-width: 980px){
+    .produtos-container{
+        max-width: 720px;
+
+    }
+    .produtos-item{
+        width: 220px;
+    }
+}
+
+
+@media only screen and (max-width: 739px){
+    .produtos-container{
+        max-width: 300px;
+
+    }
+    .produtos-item{
+        width: 300px;
+        margin: 0 auto 20px auto;
+    }
+}
+
+
+
 /* locais*/
 
 .locais{
@@ -227,6 +310,32 @@ h2.produtos-mineiro::before{
     color: #252525;
     padding: 10px 20px;
 }
+
+
+@media only screen and (min-width:740px) and (max-width: 980px){
+    .locais{
+        max-width: 720px;
+
+    }
+    .locais-item > div, .locais-item img{
+        width: 340px;
+    }
+}
+
+
+@media only screen and (max-width: 739px){
+    .locais{
+        max-width: 300px;
+
+    }
+    .locais-item > div, .locais-item img{
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+
+
 
 /* assine */
 
@@ -286,6 +395,34 @@ h2.produtos-mineiro::before{
     cursor: pointer;
 }
 
+
+
+@media only screen and (min-width:740px) and (max-width: 980px){
+    .assine-container{
+        max-width: 720px;
+
+    }
+    .assine-info, .assine form, .assine input{
+        width: 340px;
+        
+    }
+  
+}
+
+
+@media only screen and (max-width: 739px){
+    .assine-container{
+        max-width: 300px;
+        margin: 0 auto;
+
+    }
+    .assine-info, .assine form, .assine input{
+        width: 300px;
+        margin: 10px 0 0 0 ;
+    }
+}
+
+
 .footer{
     background: #d6d3c8;
     padding: 40px 0;
@@ -310,5 +447,17 @@ footer img{
     margin: 0 auto;
     display: block;
 }
-
+@media only screen and (max-width: 739px){
+    .footer-container{
+        max-width: 300px;
+    }
+    .footer p{
+        float: none;
+        margin: 0px;
+    }
+    .footer img{
+        float: none;
+        margin: 20px 0;
+    }
+}
 
